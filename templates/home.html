@@ -65,8 +65,7 @@
     <div>
     
     {% for job in jobs %}
-  <div> {{ job['title'] }} </div>
-      <div> Location :  {{ job['location'] }} </div>
+  {% include 'jobitem.html' %}
 {% endfor %}
     
     </div>
