@@ -41,7 +41,7 @@
                            
 <!---Heading Text---> 
                                                                                                                                                                                               
-  <h1 style ="font-family:courier"> <font color="A80000">  The PURRletariat </h1>
+  <h1 style ="font-family:courier"> <font color="A80000">  {{company_n}} PURRletariat </h1>
   <h2 style="font-family:courier"> A Zine for Queer & Feminist Cat Lovers </h2>
                                  
 <!---Tabs for Different  Pages--->                                 
@@ -62,7 +62,14 @@
     <b>
 <h3 style="font-family:courier"> About the PURRletariat </h3>
     <font color=black> 
-    <P style="font-family:courier">The PURRletariate started as the idea of two cat-obsessed queer feminists who, upon a magical night of cat vids wondered "Where are all the queer and feminist cats?" Having noticed a subculture of queers/feminists who were proud cat people, they wanted to create a zine for sharing cat pictures, cat-inspired art, and queer/feminist cat peoples' politics. </p>
+    <div>
+    
+    {% for job in jobs %}
+  <div> {{ job['title'] }} </div>
+      <div> Location :  {{ job['location'] }} </div>
+{% endfor %}
+    
+    </div>
     <P style="font-family:courier"> Our zine aspires to be intersectional and anti-hegemonic and a space for activists, queer/feminist organizers, and folks from the margins to celebrate their politics while celebrating their love of cats. We welcome all forms of art that can be shared in print-form: poety, collages, art, essays, stories and whatever your cat-person heart desires. </p>
       <P style="font-family:courier"> We are now seeking submissions for our FIRST issue! Please help us spread the word! We hope to have the first issue of PURRletariat out in the winter of 2015. </p>
       
